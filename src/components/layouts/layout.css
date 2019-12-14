@@ -1,0 +1,20 @@
+body {
+  background: url(../../assets/images/el-irlandes-without-letter.jpeg) no-repeat -150px, linear-gradient(to bottom, #18120F, #18120F, #0A0907, #000000) no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  font-size: 24px;
+  color: white;
+}
+
+.layout {
+  height: 100vh;
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+}
+
+.layout .card-container {
+  grid-column-start: 2; /*inicio del grid horizontal */
+  grid-column-end: -1;
+  grid-row-start: 2; /*inicio del grid vertical */
+  grid-row-end: 4;
+}

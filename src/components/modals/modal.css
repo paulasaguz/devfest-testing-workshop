@@ -1,0 +1,17 @@
+.modal-container {
+  text-align: center;
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 100px;
+  background: rgba(184, 167, 167, 0.35);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.close-button {
+  border-radius: 50%;
+}
