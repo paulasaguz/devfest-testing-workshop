@@ -18,11 +18,11 @@ const Card = ({
   const activeVideoModal = typeof videoModalId !== 'undefined';
   const getHeader = () => (
     <div className='section-title'>
-      <h1 className='title' data-testid='header-title'>
+      <h1 className='title' data-testid='card-title'>
         {title}
       </h1>
       {typeof netflixTitle !== 'undefined' && (
-        <span className='subtitle' data-testid='header-subtitle'>
+        <span className='subtitle' data-testid='card-subtitle'>
           {netflixTitle}
         </span>
       )}
