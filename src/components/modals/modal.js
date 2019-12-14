@@ -5,7 +5,7 @@ import './modal.css'
 
 const Modal = ({ onClick, children }) => {
   return (
-    <div className='modal-container'>
+    <div className='modal-container' data-testid='modal'>
       {children}
       <button
         className='close-button'

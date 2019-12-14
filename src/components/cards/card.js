@@ -31,7 +31,7 @@ const Card = ({
           <button
             className='button-option'
             onClick={setModal}
-            data-testid='header-open-video'
+            data-testid='open-video'
             aria-hidden
           >
             Ver trailer +
@@ -40,7 +40,7 @@ const Card = ({
         {!value && (
           <button
             className='button-option'
-            data-testid='header-bubble-open'
+            data-testid='description-open'
             onClick={toggleValue}
             aria-hidden
           >
@@ -58,7 +58,7 @@ const Card = ({
       <div className='grid-card'>
         {getHeader()}
         {value && showBubble && getBubble()}
-        {activeVideoModal && showModal && <VideoModal onClick={setModal} videoId={videoModalId} title='header_modal' />}
+        {activeVideoModal && showModal && <VideoModal onClick={setModal} videoId={videoModalId} title='card_modal' />}
       </div>
     </div>
   );
